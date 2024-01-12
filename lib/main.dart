@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: lightScaffoldColor,
         primaryColor: lightCardColor,
-        backgroundColor: lightBackgroundColor,
         appBarTheme: AppBarTheme(
           iconTheme: IconThemeData(
             color: lightIconsColor,
@@ -28,7 +27,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           titleTextStyle: TextStyle(
               color: lightTextColor, fontSize: 22, fontWeight: FontWeight.bold),
-          elevation: 0,
+          // elevation: 0,
         ),
         iconTheme: IconThemeData(
           color: lightIconsColor,
@@ -47,10 +46,10 @@ class MyApp extends StatelessWidget {
         //       displayColor: Colors.black,
         //     ),
         cardColor: lightCardColor,
-        brightness: Brightness.light,
-        colorScheme: ThemeData().colorScheme.copyWith(
+        brightness: Brightness.light, colorScheme: ThemeData().colorScheme.copyWith(
               secondary: lightIconsColor,
               brightness: Brightness.light,
+              background: lightBackgroundColor,
             ),
       ),
       home: const HomeScreen(),
